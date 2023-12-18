@@ -17,7 +17,17 @@ const slides = [
 	}
 ]
 
+/********** variables *********/
+let dots = document.querySelector(".dots");	
+
 /******** carrousel **********/
+
+for(let i = 0; i < slides.length; i++){
+	const content = document.createElement("span");
+	content.classList.add("dot")
+	dots.appendChild(content);
+	dots.firstElementChild.classList.add("dot_selected");	
+};
 
 arrowRight.addEventListener("click", function(){
 	console.log("suivant");	
