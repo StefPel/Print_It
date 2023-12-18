@@ -17,8 +17,11 @@ const slides = [
 	}
 ]
 
-// Sélection des éléments du DOM
+// Sélection des éléments du Document Object Model (DOM)
 let dots = document.querySelector(".dots"); // Sélectionne le conteneur des points de navigation
+const arrowRight = document.querySelector(".arrow_right"); // Sélectionne la flèche droite
+const arrowLeft = document.querySelector(".arrow_left"); // Sélectionne la flèche gauche
+const img = document.querySelector(".banner-img"); // Sélectionne l'image du carrousel
 
 // Fonction pour passer à l'image suivante
 function next() {
